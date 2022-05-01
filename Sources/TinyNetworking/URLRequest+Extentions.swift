@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension URLRequest {
+extension URLRequest {
     init(resource: Resource) {
         var url = resource.baseURL.appendingPathComponent(resource.endpoint.path)
         

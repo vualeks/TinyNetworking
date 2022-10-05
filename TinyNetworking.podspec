@@ -22,6 +22,6 @@ Pod::Spec.new do |spec|
    spec.subspec 'RxSwift' do |ss|
     ss.source_files = 'Sources/RxTinyNetworking/*.swift'
     ss.dependency 'TinyNetworking/Core'
-    ss.dependency 'RxSwift', '~> 6.0.0'
+    ss.dependency 'RxSwift', '~> 6.5.0'
   end
 end

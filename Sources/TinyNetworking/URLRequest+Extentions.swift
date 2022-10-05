@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URLRequest {
-    public init(resource: Resource) {
+    init(resource: Resource) {
         var url = resource.baseURL.appendingPathComponent(resource.endpoint.path)
         
         
@@ -36,7 +36,7 @@ public extension URLRequest {
         cachePolicy = resource.cachePolicy
     }
 
-    public func encode<E>(object: E) -> Data? where E: Encodable {
+    func encode<E>(object: E) -> Data? where E: Encodable {
         return try? JSONEncoder().encode(object)
     }
 }
